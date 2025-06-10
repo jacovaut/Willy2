@@ -1,0 +1,31 @@
+[0.078s] Invoking command in '/home/willy/Willy2.0/ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/willy/Willy2.0/ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/willy/Willy2.0/ws/install/sllidar_ros2
+[0.453s] -- The C compiler identification is GNU 13.3.0
+[0.694s] -- The CXX compiler identification is GNU 13.3.0
+[0.758s] -- Detecting C compiler ABI info
+[1.356s] -- Detecting C compiler ABI info - done
+[1.388s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.390s] -- Detecting C compile features
+[1.391s] -- Detecting C compile features - done
+[1.451s] -- Detecting CXX compiler ABI info
+[2.056s] -- Detecting CXX compiler ABI info - done
+[2.090s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.091s] -- Detecting CXX compile features
+[2.093s] -- Detecting CXX compile features - done
+[2.172s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.355s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.502s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.920s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.198s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.291s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.388s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.484s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.822s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.846s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.060s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.095s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.154s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.424s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.580s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[5.479s] -- Configuring done (5.3s)
+[5.987s] -- Generating done (0.4s)
+[6.211s] -- Build files have been written to: /home/willy/Willy2.0/ws/build/sllidar_ros2
