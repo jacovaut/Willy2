@@ -5,8 +5,8 @@
   },
   "remoteUser": "willy",
 
-  "workspaceMount": "source=${localWorkspaceFolder},target=/home/PFE/PFE_Eurobot_2026,type=bind",
-  "workspaceFolder": "/home/PFE/PFE_Eurobot_2026",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/willy/Willy2.0,type=bind",
+  "workspaceFolder": "/home/willy/Willy2.0",
 
   "runArgs": [
     "--net=host",
@@ -34,5 +34,5 @@
     }
   },
 
-  "postCreateCommand": "echo 'source /opt/ros/jazzy/setup.bash' >> /home/PFE/.bashrc"
+  "postCreateCommand": "echo 'source /opt/ros/humble/setup.bash' >> /home/willy/.bashrc"
 }

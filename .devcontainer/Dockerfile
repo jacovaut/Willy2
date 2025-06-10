@@ -1,4 +1,4 @@
-FROM ros:jazzy-perception
+FROM ros:humble-perception
 
 # Arguments for user creation
 ARG USERNAME=willy
@@ -20,7 +20,7 @@ RUN groupadd --gid ${USER_GID} ${USERNAME} && \
 
 # Update & install necessary packages
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y python3-pip ros-jazzy-rqt* ros-jazzy-rviz2 && \
+    apt-get install -y python3-pip ros-humble-rqt* ros-humble-rviz2 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set shell for user (not mandatory, but good for dev experience)

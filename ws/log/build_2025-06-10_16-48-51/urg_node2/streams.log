@@ -1,0 +1,114 @@
+[0.091s] Invoking command in '/home/willy/Willy2.0/ws/build/urg_node2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/willy/Willy2.0/ws/src/urg_node2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/willy/Willy2.0/ws/install/urg_node2
+[0.152s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.312s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.406s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.427s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.429s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.433s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.443s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.455s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.487s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.490s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.766s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.806s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.821s] -- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.833s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.856s] -- Found diagnostic_updater: 4.0.4 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[0.869s] -- Found laser_proc: 1.0.2 (/opt/ros/humble/share/laser_proc/cmake)
+[0.986s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.987s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.577s] -- Configuring done
+[2.353s] -- Generating done
+[2.758s] -- Build files have been written to: /home/willy/Willy2.0/ws/build/urg_node2
+[2.778s] Invoked command in '/home/willy/Willy2.0/ws/build/urg_node2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/willy/Willy2.0/ws/src/urg_node2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/willy/Willy2.0/ws/install/urg_node2
+[2.786s] Invoking command in '/home/willy/Willy2.0/ws/build/urg_node2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/willy/Willy2.0/ws/build/urg_node2 -- -j16 -l16
+[2.802s] gmake: Warning: File 'Makefile' has modification time 2.9 s in the future
+[2.891s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 3.1 s in the future
+[2.904s] gmake[2]: Warning: File 'CMakeFiles/urg_c.dir/flags.make' has modification time 2.6 s in the future
+[2.905s] gmake[2]: Warning: File 'CMakeFiles/urg_node2_node.dir/flags.make' has modification time 2.7 s in the future
+[2.906s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/flags.make' has modification time 2.9 s in the future
+[2.907s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/flags.make' has modification time 2.9 s in the future
+[2.929s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.930s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.931s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.941s] gmake[2]: Warning: File 'CMakeFiles/urg_node2_node.dir/flags.make' has modification time 2.7 s in the future
+[2.942s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/flags.make' has modification time 2.8 s in the future
+[2.943s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/flags.make' has modification time 2.9 s in the future
+[2.945s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.960s] gmake[2]: Warning: File 'CMakeFiles/urg_c.dir/flags.make' has modification time 2.6 s in the future
+[2.965s] [ 15%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.966s] [ 15%] [32mBuilding CXX object CMakeFiles/urg_node2_node.dir/rclcpp_components/node_main_urg_node2_node.cpp.o[0m
+[2.967s] [ 15%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.994s] [ 20%] [32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_sensor.c.o[0m
+[3.000s] [ 25%] [32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_utils.c.o[0m
+[3.009s] [ 30%] [32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_debug.c.o[0m
+[3.021s] [ 35%] [32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_connection.c.o[0m
+[3.026s] [ 40%] [32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_ring_buffer.c.o[0m
+[3.031s] [ 45%] [32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_serial.c.o[0m
+[3.037s] [ 50%] [32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_serial_utils.c.o[0m
+[3.043s] [ 55%] [32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_tcpclient.c.o[0m
+[3.268s] [01m[K/home/willy/Willy2.0/ws/src/urg_node2/urg_library/current/src/urg_utils.c:[m[K In function ‘[01m[Kurg_delay[m[K’:
+[3.270s] [01m[K/home/willy/Willy2.0/ws/src/urg_node2/urg_library/current/src/urg_utils.c:224:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kusleep[m[K’; did you mean ‘[01m[Kurg_sleep[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+[3.271s]   224 |     [01;35m[Kusleep[m[K(1000 * delay_msec);
+[3.271s]       |     [01;35m[K^~~~~~[m[K
+[3.272s]       |     [32m[Kurg_sleep[m[K
+[3.288s] [01m[K/home/willy/Willy2.0/ws/src/urg_node2/urg_library/current/src/urg_sensor.c:1349:8:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[3.289s]  1349 | static [01;35m[Kconst[m[K int receive_II_command_response(urg_t *urg,
+[3.290s]       |        [01;35m[K^~~~~[m[K
+[3.370s] [ 60%] [32m[1mLinking C shared library liburg_c.so[0m
+[3.535s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[3.570s] [ 60%] Built target urg_c
+[3.582s] gmake[2]: Warning: File 'CMakeFiles/urg_node2.dir/flags.make' has modification time 2 s in the future
+[3.605s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[3.618s] gmake[2]: Warning: File 'CMakeFiles/urg_node2.dir/flags.make' has modification time 2 s in the future
+[3.644s] [ 65%] [32mBuilding CXX object CMakeFiles/urg_node2.dir/src/urg_node2.cpp.o[0m
+[4.341s] [ 70%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.425s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.446s] [ 70%] Built target gtest_main
+[6.739s] [ 75%] [32m[1mLinking CXX static library libgtest.a[0m
+[7.454s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[7.477s] [ 75%] Built target gtest
+[7.549s] gmake[2]: Warning: File 'gtest/libgtest_main.a' has modification time 0.26 s in the future
+[7.560s] [ 80%] [32mBuilding CXX object CMakeFiles/urg_node2_test.dir/src/urg_node2.cpp.o[0m
+[7.565s] [ 85%] [32mBuilding CXX object CMakeFiles/urg_node2_test.dir/test/urg_node2_test.cpp.o[0m
+[7.995s] [ 90%] [32m[1mLinking CXX executable urg_node2_node[0m
+[9.192s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[9.211s] [ 90%] Built target urg_node2_node
+[13.105s] [ 95%] [32m[1mLinking CXX shared library liburg_node2.so[0m
+[14.604s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[14.623s] [ 95%] Built target urg_node2
+[21.742s] [100%] [32m[1mLinking CXX executable urg_node2_test[0m
+[26.127s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[26.148s] [100%] Built target urg_node2_test
+[26.149s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[26.219s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[26.222s] Invoked command in '/home/willy/Willy2.0/ws/build/urg_node2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/willy/Willy2.0/ws/build/urg_node2 -- -j16 -l16
+[26.242s] Invoking command in '/home/willy/Willy2.0/ws/build/urg_node2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/willy/Willy2.0/ws/build/urg_node2
+[26.251s] -- Install configuration: ""
+[26.258s] -- Execute custom install script
+[26.273s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/lib/urg_node2/urg_node2_node
+[26.304s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/lib/liburg_node2.so
+[26.331s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/lib/liburg_c.so
+[26.378s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/launch/urg_node2.launch.py
+[26.412s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/launch/urg_node2_2lidar.launch.py
+[26.448s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/launch/urg_node2_component.launch.py
+[26.503s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/config/params_ether.yaml
+[26.538s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/config/params_ether_2nd.yaml
+[26.570s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/config/params_serial.yaml
+[26.617s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/ament_index/resource_index/package_run_dependencies/urg_node2
+[26.672s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/ament_index/resource_index/parent_prefix_path/urg_node2
+[26.722s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/environment/ament_prefix_path.sh
+[26.754s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/environment/ament_prefix_path.dsv
+[26.791s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/environment/path.sh
+[26.822s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/environment/path.dsv
+[26.853s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/local_setup.bash
+[26.887s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/local_setup.sh
+[26.916s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/local_setup.zsh
+[26.946s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/local_setup.dsv
+[26.975s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/package.dsv
+[27.026s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/ament_index/resource_index/packages/urg_node2
+[27.076s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/ament_index/resource_index/rclcpp_components/urg_node2
+[27.121s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/cmake/urg_node2Config.cmake
+[27.155s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/cmake/urg_node2Config-version.cmake
+[27.191s] -- Symlinking: /home/willy/Willy2.0/ws/install/urg_node2/share/urg_node2/package.xml
+[27.225s] Invoked command in '/home/willy/Willy2.0/ws/build/urg_node2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/willy/Willy2.0/ws/build/urg_node2
