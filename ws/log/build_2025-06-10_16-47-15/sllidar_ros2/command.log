@@ -1,3 +1,0 @@
-Invoking command in '/home/willy/Willy2.0/ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/willy/Willy2.0/ws/build/sllidar_ros2 -- -j16 -l16
-Invoked command in '/home/willy/Willy2.0/ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/willy/Willy2.0/ws/build/sllidar_ros2 -- -j16 -l16
-Invoking command in '/home/willy/Willy2.0/ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/willy/Willy2.0/ws/build/sllidar_ros2

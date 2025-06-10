@@ -1,1 +1,0 @@
-Invoking command in '/home/willy/Willy2.0/ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/willy/Willy2.0/ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/willy/Willy2.0/ws/install/sllidar_ros2
