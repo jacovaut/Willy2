@@ -29,6 +29,8 @@ RUN apt-get update && apt-get upgrade -y && \
     ros-humble-slam-toolbox \
     ros-humble-gazebo-ros-pkgs \
     ros-humble-gazebo-ros \
+    ros-humble-xacro \
+    ros-humble-joint-state-publisher \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set shell for user (not mandatory, but good for dev experience)

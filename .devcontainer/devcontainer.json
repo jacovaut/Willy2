@@ -9,20 +9,32 @@
   "workspaceFolder": "/home/willy/Willy2.0",
 
   "runArgs": [
+    "--gpus=all",
     "--net=host",
     "--ipc=host",
     "--pid=host",
+
+    "--device=/dev/dxg",
+    "-v", "/usr/lib/wsl:/usr/lib/wsl",
+    "-v", "/mnt/wslg:/mnt/wslg",
+    "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+
+    "-e", "DISPLAY=${env:DISPLAY}",
     "-e", "WAYLAND_DISPLAY=${env:WAYLAND_DISPLAY}",
     "-e", "XDG_RUNTIME_DIR=${env:XDG_RUNTIME_DIR}",
-    "-v", "${env:XDG_RUNTIME_DIR}/${env:WAYLAND_DISPLAY}:/tmp/wayland.sock"
+    "-e", "LD_LIBRARY_PATH=/usr/lib/wsl/lib"
   ],
 
+
   "containerEnv": {
-    "WAYLAND_DISPLAY": "/tmp/wayland.sock",
+    "DISPLAY": "${env:DISPLAY}",
+    "WAYLAND_DISPLAY": "${env:WAYLAND_DISPLAY}",
     "XDG_RUNTIME_DIR": "${env:XDG_RUNTIME_DIR}",
+    "LD_LIBRARY_PATH": "/usr/lib/wsl/lib",
     "ROS_DOMAIN_ID": "42",
     "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST"
-  },
+  }
+
 
   "customizations": {
     "vscode": {
@@ -34,5 +46,9 @@
     }
   },
 
-  "postCreateCommand": "echo 'source /opt/ros/humble/setup.bash' >> /home/willy/.bashrc"
+  "postCreateCommand": {
+    "source_ros" : "echo 'source /opt/ros/humble/setup.bash' >> /home/willy/.bashrc",
+    "source_ws" : "echo 'source /home/willy/Willy2.0/ws/install/setup.bash' >> /home/willy/.bashrc",
+    "update" : "sudo apt update"
+  }
 }
