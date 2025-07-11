@@ -22,13 +22,9 @@ RUN groupadd --gid ${USER_GID} ${USERNAME} && \
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y \
     python3-pip \
-    ros-humble-rqt* \
-    ros-humble-rviz2 \
     ros-humble-navigation2 \
     ros-humble-nav2-bringup \
     ros-humble-slam-toolbox \
-    ros-humble-gazebo-ros-pkgs \
-    ros-humble-gazebo-ros \
     ros-humble-xacro \
     ros-humble-joint-state-publisher \
     && apt-get clean && rm -rf /var/lib/apt/lists/*

@@ -2,8 +2,8 @@
 set -e
 
 # Variables
-IMAGE_NAME="ros2-devcontainer"
-CONTAINER_NAME="ros2-devcontainer-container"
+IMAGE_NAME="ros2-devimage"
+CONTAINER_NAME="ros2-devcontainer"
 USER="willy"
 WORKSPACE_HOST="$(pwd)/.."  # Local project dir
 WORKSPACE_CONTAINER="/home/$USER/Willy2.0"
@@ -24,11 +24,13 @@ fi
 # Allow local connections (may be unsafe on shared systems)
 xhost +local:docker
 
+docker container rm -f "$CONTAINER_NAME" || true
+
 # Build Docker image
-docker build -t "$IMAGE_NAME" .
+docker build -t "$IMAGE_NAME" -f "$1" .
 
 # Run container with X11 support
-docker run -it --rm \
+docker run -itd --rm \
   --name "$CONTAINER_NAME" \
   --net=host \
   --ipc=host \
@@ -51,6 +53,8 @@ docker run -it --rm \
     sudo apt update && \
     exec bash
   "
+
+docker ps
 
 # Revoke X11 permissions
 xhost -local:docker

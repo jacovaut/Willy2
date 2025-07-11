@@ -81,9 +81,6 @@
     </link>
 
     <gazebo reference="fr_wheel">
-        <mu1>0.1</mu1>              <!-- lateral friction (low) -->
-        <mu2>100.0</mu2>            <!-- rolling direction friction (high) -->
-        <fdir1>1 -1 0</fdir1>       <!-- direction of rollers -->
         <material>Gazebo/Blue</material>
     </gazebo>
 
@@ -113,9 +110,6 @@
     </link>
 
     <gazebo reference="fl_wheel">
-        <mu1>0.1</mu1>              <!-- lateral friction (low) -->
-        <mu2>100.0</mu2>            <!-- rolling direction friction (high) -->
-        <fdir1>1 1 0</fdir1>       <!-- direction of rollers -->
         <material>Gazebo/Blue</material>
     </gazebo>
 
@@ -145,9 +139,6 @@
     </link>
 
     <gazebo reference="mr_wheel">
-        <mu1>0.1</mu1>              <!-- lateral friction (low) -->
-        <mu2>100.0</mu2>            <!-- rolling direction friction (high) -->
-        <fdir1>1 -1 0</fdir1>       <!-- direction of rollers -->
         <material>Gazebo/Blue</material>
     </gazebo>
 
@@ -177,9 +168,6 @@
     </link>
 
     <gazebo reference="ml_wheel">
-        <mu1>0.1</mu1>              <!-- lateral friction (low) -->
-        <mu2>100.0</mu2>            <!-- rolling direction friction (high) -->
-        <fdir1>1 1 0</fdir1>       <!-- direction of rollers -->
         <material>Gazebo/Blue</material>
     </gazebo>
 
@@ -209,9 +197,6 @@
     </link>
 
     <gazebo reference="rr_wheel">
-        <mu1>0.1</mu1>              <!-- lateral friction (low) -->
-        <mu2>100.0</mu2>            <!-- rolling direction friction (high) -->
-        <fdir1>-1 -1 0</fdir1>       <!-- direction of rollers -->
         <material>Gazebo/Blue</material>
     </gazebo>
 
@@ -241,9 +226,6 @@
     </link>
 
     <gazebo reference="rl_wheel">
-        <mu1>0.1</mu1>              <!-- lateral friction (low) -->
-        <mu2>100.0</mu2>            <!-- rolling direction friction (high) -->
-        <fdir1>-1 1 0</fdir1>       <!-- direction of rollers -->
         <material>Gazebo/Blue</material>
     </gazebo>
 </robot>

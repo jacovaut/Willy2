@@ -42,7 +42,7 @@ def generate_launch_description():
                 'gazebo.launch.py'
             )
         ),
-        launch_arguments={'world': world_path}.items()
+        # launch_arguments={'world': world_path}.items()
     )
 
     # RViz
