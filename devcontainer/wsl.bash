@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Variables
-IMAGE_NAME="ros2-devimage"
-CONTAINER_NAME="ros2-devcontainer"
+IMAGE_NAME="$2-img"
+CONTAINER_NAME="$2-container"
 USER="willy"
 WORKSPACE_HOST="$(pwd)/.."  # Local project dir
 WORKSPACE_CONTAINER="/home/$USER/Willy2.0"
@@ -23,14 +23,13 @@ sudo docker run -it --rm\
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v /mnt/wslg:/mnt/wslg \
     -v /usr/lib/wsl:/usr/lib/wsl \
+    -v "$WORKSPACE_HOST":"$WORKSPACE_CONTAINER" \
     -e DISPLAY=$DISPLAY \
     -e LD_LIBRARY_PATH=/usr/lib/wsl/lib \
     -e TERM=$TERM \
-    -v "$LOCAL_WORKSPACE_PATH":"$CONTAINER_WORKSPACE_PATH" \
-    --workdir "$CONTAINER_WORKSPACE_PATH" \
-    --user "$(id -u):$(id -g)" \
-    --name ros2-devcontainer \
-    --hostname ros2-dev \
+    --workdir "$WORKSPACE_CONTAINER" \
+    --user "$USER" \
+    --name "$CONTAINER_NAME" \
     "$IMAGE_NAME" \
     bash -c " \
         echo 'source /opt/ros/humble/setup.bash' >> /home/willy/.bashrc && \

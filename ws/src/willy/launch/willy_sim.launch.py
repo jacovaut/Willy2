@@ -13,7 +13,7 @@ def generate_launch_description():
     pkg_share = get_package_share_directory(pkg_name)
 
     # File paths
-    world_path = os.path.join(pkg_share, 'worlds', 'your_world.world')
+    world_path = os.path.join(pkg_share, 'worlds', 'world.sdf')
     rviz_config_path = os.path.join(pkg_share, 'description', 'rviz', 'rviz_conf.rviz')
     controller_config = os.path.join(pkg_share, 'config', 'willy_controllers.yaml')
     xacro_file = os.path.join(pkg_share, 'description', 'urdf', 'willy.urdf.xacro')
@@ -30,7 +30,7 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[robot_description]
+        parameters=[robot_description,{'use_sim_time': True}]
     )
 
     # Gazebo simulator
@@ -42,7 +42,7 @@ def generate_launch_description():
                 'gazebo.launch.py'
             )
         ),
-        # launch_arguments={'world': world_path}.items()
+        launch_arguments={'world': world_path}.items()
     )
 
     # RViz
@@ -51,7 +51,8 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='screen',
-        arguments=['-d', rviz_config_path]
+        arguments=['-d', rviz_config_path],
+        parameters=[{'use_sim_time': True}]
     )
 
     # Spawn robot into Gazebo
@@ -80,7 +81,8 @@ def generate_launch_description():
     node_robot_joint_publisher = Node(
         package='joint_state_publisher',
         executable='joint_state_publisher',
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time': True}]
     )
 
     return LaunchDescription([

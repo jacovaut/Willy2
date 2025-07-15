@@ -2,8 +2,8 @@
 set -e
 
 # Variables
-IMAGE_NAME="ros2-devimage"
-CONTAINER_NAME="ros2-devcontainer"
+IMAGE_NAME="$2-img"
+CONTAINER_NAME="$2-container"
 USER="willy"
 WORKSPACE_HOST="$(pwd)/.."  # Local project dir
 WORKSPACE_CONTAINER="/home/$USER/Willy2.0"
@@ -45,6 +45,7 @@ docker run -itd --rm \
   -v "$WORKSPACE_HOST":"$WORKSPACE_CONTAINER" \
   -v "$XSOCK":"$XSOCK" \
   -v "$XAUTH":"$XAUTH" \
+  --workdir "$WORKSPACE_CONTAINER" \
   --user "$USER" \
   "$IMAGE_NAME" \
   bash -c "\
