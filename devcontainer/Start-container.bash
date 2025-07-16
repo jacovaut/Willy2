@@ -15,12 +15,15 @@ read -r response
 case "$response" in
     1)
         DOCKERFILE="Dockerfile_gazebo"
+        STR="willy-gazebo"
         ;;
     2)
         DOCKERFILE="Dockerfile_robot"
+        STR="willy-robot"
         ;;
     3)
         DOCKERFILE="Dockerfile_remote"
+        STR="willy-remote"
         ;;
     *)
         echo "invalid response"
@@ -36,12 +39,12 @@ case "$response" in
     wsl|WSL)
         echo "you are running WSL with Dockerfile : $DOCKERFILE"
         chmod +x ./wsl.bash
-        ./wsl.bash "$DOCKERFILE"
+        ./wsl.bash "$DOCKERFILE" "$STR"
         ;;
     linux|Linux)
         echo "you are running native Linux with Dockerfile : $DOCKERFILE"
         chmod +x ./linux.bash
-        ./linux.bash "$DOCKERFILE"
+        ./linux.bash "$DOCKERFILE" "$STR"
         ;;
     *)
         echo "invalid response"
