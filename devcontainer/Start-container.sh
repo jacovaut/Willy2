@@ -14,7 +14,6 @@ read -r response
 case "$response" in
     1)
         DOCKERFILE="Dockerfile_gazebo"
-<<<<<<< HEAD:devcontainer/Start-container.bash
         STR="willy-gazebo"
         ;;
     2)
@@ -24,17 +23,6 @@ case "$response" in
     3)
         DOCKERFILE="Dockerfile_remote"
         STR="willy-remote"
-=======
-        STR="gazebo"
-        ;;
-    2)
-        DOCKERFILE="Dockerfile_robot"
-        STR="robot"
-        ;;
-    3)
-        DOCKERFILE="Dockerfile_remote"
-        STR="remote"
->>>>>>> origin:devcontainer/Start-container.sh
         ;;
     *)
         echo "invalid response"
