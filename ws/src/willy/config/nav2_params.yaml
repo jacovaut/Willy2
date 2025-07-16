@@ -26,7 +26,7 @@ amcl:
     recovery_alpha_fast: 0.0
     recovery_alpha_slow: 0.0
     resample_interval: 1
-    robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    robot_model_type: "nav2_amcl::OmniMotionModel"
     save_pose_rate: 0.5
     sigma_hit: 0.2
     tf_broadcast: true
@@ -114,7 +114,7 @@ controller_server:
     use_sim_time: true
     controller_frequency: 20.0
     min_x_velocity_threshold: 0.001
-    min_y_velocity_threshold: 0.001    # LOWER THIS for precision
+    min_y_velocity_threshold: 0.001  
     min_theta_velocity_threshold: 0.001
     failure_tolerance: 0.3
     progress_checker_plugin: "progress_checker"
@@ -136,21 +136,21 @@ controller_server:
       plugin: "dwb_core::DWBLocalPlanner"
       debug_trajectory_details: true
       min_vel_x: 0.0
-      min_vel_y: -0.26              # ⬅ allow motion in both directions
+      min_vel_y: -0.26            
       max_vel_x: 0.26
-      max_vel_y: 0.26               # ⬅ allow holonomic motion
+      max_vel_y: 0.26          
       max_vel_theta: 1.0
       min_speed_xy: 0.0
       max_speed_xy: 0.26
       min_speed_theta: 0.0
       acc_lim_x: 2.5
-      acc_lim_y: 2.5                # ⬅ acceleration in y
+      acc_lim_y: 2.5           
       acc_lim_theta: 3.2
       decel_lim_x: -2.5
-      decel_lim_y: -2.5             # ⬅ deceleration in y
+      decel_lim_y: -2.5          
       decel_lim_theta: -3.2
       vx_samples: 20
-      vy_samples: 10                # ⬅ more y velocity samples
+      vy_samples: 10     
       vtheta_samples: 20
       sim_time: 1.7
       linear_granularity: 0.05
@@ -161,7 +161,7 @@ controller_server:
       short_circuit_trajectory_evaluation: true
       stateful: true
 
-      holonomic_robot: true         # ⬅ ENABLE HOLONOMIC MODE
+      holonomic_robot: true   
 
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
       BaseObstacle.scale: 0.02
@@ -335,10 +335,10 @@ velocity_smoother:
     smoothing_frequency: 20.0
     scale_velocities: False
     feedback: "OPEN_LOOP"
-    max_velocity: [0.26, 0.0, 1.0]
-    min_velocity: [-0.26, 0.0, -1.0]
-    max_accel: [2.5, 0.0, 3.2]
-    max_decel: [-2.5, 0.0, -3.2]
+    max_velocity: [0.26, 0.26, 1.0]
+    min_velocity: [-0.26, -0.26, -1.0]
+    max_accel: [2.5, 2.5, 3.2]
+    max_decel: [-2.5, -2.5, -3.2]
     odom_topic: "odom"
     odom_duration: 0.1
     deadband_velocity: [0.0, 0.0, 0.0]
