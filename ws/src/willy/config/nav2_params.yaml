@@ -138,52 +138,51 @@ controller_server:
 
       min_vel_x: 0.0
       max_vel_x: 0.5
-      min_vel_y: -0.26  # Symmetric min/max
+      min_vel_y: -0.26
       max_vel_y: 0.26
       max_vel_theta: 1.0
 
-      min_speed_xy: 0.0
+      min_speed_xy: 0.05       # was 0.0 → fix
       max_speed_xy: 0.5
-      min_speed_theta: 0.0
+      min_speed_theta: 0.05    # was 0.0 → fix
 
       acc_lim_x: 2.5
       acc_lim_y: 2.5
       acc_lim_theta: 3.2
-      decel_lim_x: 2.5   # Fixed: positive values
+      decel_lim_x: 2.5
       decel_lim_y: 2.5
       decel_lim_theta: 3.2
 
       vx_samples: 20
-      vy_samples: 20     # Increased for better holonomic sampling
+      vy_samples: 20
       vtheta_samples: 20
 
-      sim_time: 1.7
+      sim_time: 2.5            # was 1.7 → improved horizon
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.2
 
       xy_goal_tolerance: 0.25
-      trans_stopped_velocity: 0.25
+      trans_stopped_velocity: 0.01   # was 0.25 → major fix
 
       short_circuit_trajectory_evaluation: true
       stateful: true
       holonomic_robot: true
 
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
+
       BaseObstacle.scale: 0.02
-
-      PathAlign.scale: 15.0  # Reduced for more balanced behavior
+      PathAlign.scale: 15.0
       PathAlign.forward_point_distance: 0.1
-
       GoalAlign.scale: 10.0
       GoalAlign.forward_point_distance: 0.1
-
       PathDist.scale: 10.0
       GoalDist.scale: 10.0
-
       RotateToGoal.scale: 32.0
       RotateToGoal.slowing_factor: 5.0
       RotateToGoal.lookahead_time: -1.0
+
+  ros__arguments: ['--log-level', 'info']
 
 
 local_costmap:
